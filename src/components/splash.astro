@@ -7,7 +7,7 @@ import HeroImage from "~/components/hero-image.astro";
 const widths = [450, 800];
 const sizes = "(min-width: 640px) 42vw, 67vw";
 
-const { webp, avif, png } = generateImage("src/assets/shipitsmarter_logo_rgb.svg", {
+const { webp, avif, png } = generateImage("src/assets/packages.png", {
   widths,
   formats: ["webp", "avif", "png"],
   outputDir: "public/assets/images/astronaut",
@@ -32,9 +32,9 @@ const pngSrcset = png.map(({ srcset }) => srcset).join(",");
       <div
         class="font-extrabold tracking-tighter text-center text-8xl gradient-text"
       >
-        Build fast
-        <br /> websites,
-        <br /> faster.
+        Ship fast
+        <br /> easy,
+        <br /> cheaper.
       </div>
     </h2>
     <picture
@@ -48,7 +48,7 @@ const pngSrcset = png.map(({ srcset }) => srcset).join(",");
         src={png[0].url}
         width={png[0].width}
         height={png[0].height}
-        alt="A floating astronaut in a space suit"
+        alt="A floating package"
       />
     </picture>
   </div>
