@@ -1,20 +1,35 @@
-# Introduction 
-TODO: Give a short introduction of your project. Let this section explain the objectives or the motivation behind this project. 
+# Astro Landing Page
 
-# Getting Started
-TODO: Guide users through getting your code up and running on their own system. In this section you can talk about:
-1.	Installation process
-2.	Software dependencies
-3.	Latest releases
-4.	API references
+An Astro + Tailwind CSS starter kit for landing pages.
 
-# Build and Test
-TODO: Describe and show how to build your code and run the tests. 
+![Screenshots of Astro Landing Page](screenshots.jpg)
 
-# Contribute
-TODO: Explain how other users and developers can contribute to make your code better. 
+## Features
 
-If you want to learn more about creating good readme files then refer the following [guidelines](https://docs.microsoft.com/en-us/azure/devops/repos/git/create-a-readme?view=azure-devops). You can also seek inspiration from the below readme files:
-- [ASP.NET Core](https://github.com/aspnet/Home)
-- [Visual Studio Code](https://github.com/Microsoft/vscode)
-- [Chakra Core](https://github.com/Microsoft/ChakraCore)
+- 💨 Tailwind CSS for styling
+- 🎨 Themeable
+  - CSS variables are defined in `src/styles/theme.css` and mapped to Tailwind (`tailwind.config.cjs`)
+- 🌙 Dark mode
+- 📱 Responsive (layout, images, typography)
+- ♿ Accessible (as measured by https://web.dev/measure/)
+- 🔎 SEO-enabled (as measured by https://web.dev/measure/)
+- 🔗 Open Graph tags for social media sharing
+
+## Commands
+
+| Command           | Action                                            |
+| :---------------- | :------------------------------------------------ |
+| `npm install`     | Install dependencies                              |
+| `npm run dev`     | Start local dev server at `localhost:3000`        |
+| `npm run build`   | Build your production site to `./dist/`           |
+| `npm run preview` | Preview your build locally, before deploying      |
+| `npm run format`  | Format code with [Prettier](https://prettier.io/) |
+| `npm run clean`   | Remove `node_modules` and build output            |
+
+## Credits
+
+- astronaut image
+  - source: https://github.com/withastro/astro-og-image; note: this repo is not available anymore
+- moon image
+  - source: https://unsplash.com/@nasa
+- other than that, a lot of material (showcase data, copy) was taken from official Astro sources, in particular https://astro.build/blog/introducing-astro/ and https://github.com/withastro/astro.build
